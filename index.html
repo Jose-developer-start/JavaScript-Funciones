@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ejercicios en el lenguaje de programación javaScript de la materia de Internet II">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Funciones en JavaScript</title>
+</head>
+<body>
+    <header><h1>Internet II | JS</h1></header>
+    <main>
+        <article class="card">
+            <section class="card-title"><h2>Ejercicio 1</h2></section>
+            <section class="card-content"><p>Escribe un programa de dos líneas que pida el nombre del usuario con un prompt y escriba un texto que diga “Hola nombre Usuario” </p></section>
+            <section class="card-footer"><button id="1" class="btn">ejecutar</button></section>
+            <section class="card-mas">
+                <h3>Ejecutar en un input</h3>
+                <div><input class="form-input" id="user" type="text" placeholder="Nombre de usuario"></div>
+                <p id="res"></p>
+            </section>
+            
+        </article>
+        <article class="card">
+            <section class="card-title"><h2>Ejercicio 2</h2></section>
+            <section class="card-content"><p>Escribe un programa que pida dos números y escriba en la pantalla la suma de ellos</p></section>
+            <section class="card-footer"><button id="2" class="btn">ejecutar</button></section>
+            <section class="card-mas">
+                <h3>Ejecutar en un input</h3>
+                <div><input class="form-input" id="number1" type="number" placeholder="Ingrese un número"></div>
+                <div><input class="form-input" id="number2" type="number" placeholder="Ingrese un número"></div>
+                <div><button class="btn" id="suma">SUMA</button></div>
+                <p>La suma es: <span id="res-suma">0</span></p>
+            </section>
+            
+        </article>
+        <article class="card">
+            <section class="card-title"><h2>Ejercicio 3</h2></section>
+            <section class="card-content"><p>Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.</p></section>
+            <section class="card-footer"><button id="3" class="btn">ejecutar</button></section>
+            <section class="card-mas">
+                <h3>Ejecutar en un input</h3>
+                <div><input class="form-input" id="numberUno" type="number" placeholder="Ingrese un número"></div>
+                <div><input class="form-input" id="numberDos" type="number" placeholder="Ingrese un número"></div>
+                <div><input class="form-input" id="numberTres" type="number" placeholder="Ingrese un número"></div>
+                <div><button class="btn" id="calBtn">CALCULAR</button></div>
+                <p>El mayor es: <span id="res-mayor">0</span></p>
+            </section>
+            
+        </article>
+        <article class="card">
+            <section class="card-title"><h2>Ejercicio 4</h2></section>
+            <section class="card-content"><p>Escribe un programa que pida un número y diga si es divisible por 2</p></section>
+            <section class="card-footer"><button id="4" class="btn">ejecutar</button></section>
+            <section class="card-mas">
+                <h3>Ejecutar en un input</h3>
+                <div><input class="form-input" id="num1" type="number" placeholder="Ingrese número"></div>
+                <p id="res1"></p>
+            </section>
+            
+        </article>
+        <article class="card">
+            <section class="card-title"><h2>Ejercicio 5</h2></section>
+            <section class="card-content"><p>Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a</p></section>
+            <section class="card-footer"><button id="5" class="btn">ejecutar</button></section>
+            <section class="card-mas">
+                <h3>Ejecutar en un input</h3>
+                <div><input class="form-input" id="frase" type="text" placeholder="Ingrese número"></div>
+                <p id="res2"></p>
+            </section>
+            
+        </article>
+        <article class="card">
+            <section class="card-title"><h2>Ejercicio 6</h2></section>
+            <section class="card-content"><p>Escribe un programa que pida una frase y escriba las vocales que aparecen</p></section>
+            <section class="card-footer"><button id="6" class="btn">ejecutar</button></section>
+            <section class="card-mas">
+                <h3>Ejecutar en un input</h3>
+                <div><input class="form-input" id="frase1" type="text" placeholder="Ingrese número"></div>
+                <p id="res3"></p>
+            </section>
+            
+        </article>
+        <article class="card">
+            <section class="card-title"><h2>Ejercicio 7</h2></section>
+            <section class="card-content"><p>Escribe un programa que pida una frase y escriba cuántas de las letras que tiene son vocales</p></section>
+            <section class="card-footer"><button id="7" class="btn">ejecutar</button></section>
+            <section class="card-mas">
+                <h3>Ejecutar en un input</h3>
+                <div><input class="form-input" id="frase2" type="text" placeholder="Ingrese número"></div>
+                <p id="res4"></p>
+            </section>
+            
+        </article>
+        <article class="card">
+            <section class="card-title"><h2>Ejercicio 8</h2></section>
+            <section class="card-content"><p>Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las vocales</p></section>
+            <section class="card-footer"><button id="8" class="btn">ejecutar</button></section>
+            <section class="card-mas">
+                <h3>Ejecutar en un input</h3>
+                <div><input class="form-input" id="frase3" type="text" placeholder="Ingrese número"></div>
+                <p id="res5"></p>
+            </section>
+            
+        </article>
+        <article class="card">
+            <section class="card-title"><h2>Ejercicio 9</h2></section>
+            <section class="card-content"><p>Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro)</p></section>
+            <section class="card-footer"><button id="9" class="btn">ejecutar</button></section>
+            <section class="card-mas">
+                <h3>Ejecutar en un input</h3>
+                <div><input class="form-input" id="txtNumber1" type="number" placeholder="Ingrese número"></div>
+                <p id="res6"></p>
+            </section>
+            
+        </article>
+        <article class="card">
+            <section class="card-title"><h2>Ejercicio 10</h2></section>
+            <section class="card-content"><p>Añadir al ejercicio anterior que nos diga por cual de los cuatro es divisible (hay que decir todos por los que es divisible)</p></section>
+            <section class="card-footer"><button id="10" class="btn">ejecutar</button></section>
+            <section class="card-mas">
+                <h3>Ejecutar en un input</h3>
+                <div><input class="form-input" id="txtNumber2" type="number" placeholder="Ingrese número"></div>
+                <p id="res7"></p>
+            </section>
+            
+        </article>
+        <article class="card">
+            <section class="card-title"><h2>Ejercicio 11</h2></section>
+            <section class="card-content"><p>Escribir un programa que escriba en pantalla los divisores de un número dado </p></section>
+            <section class="card-footer"><button id="11" class="btn">ejecutar</button></section>
+            <section class="card-mas">
+                <h3>Ejecutar en un input</h3>
+                <div><input class="form-input" id="txtNumber3" type="number" placeholder="Ingrese número"></div>
+                <p id="res8"></p>
+            </section>
+            
+        </article>
+        <article class="card">
+            <section class="card-title"><h2>Ejercicio 12</h2></section>
+            <section class="card-content"><p>Escribir un programa que escriba en pantalla los divisores comunes de dos números dados </p></section>
+            <section class="card-footer"><button id="12" class="btn">ejecutar</button></section>
+            <section class="card-mas">
+                <h3>Ejecutar en un input</h3>
+                <div><input class="form-input" id="txtNumber4" type="number" placeholder="Ingrese número"></div>
+                <div><input class="form-input" id="txtNumber5" type="number" placeholder="Ingrese número"></div>
+                <div><button class="btn" id="calNumberComun">Calcular</button></div>
+                <p id="res9"></p>
+            </section>
+            
+        </article>
+        <article class="card">
+            <section class="card-title"><h2>Ejercicio 13</h2></section>
+            <section class="card-content"><p>Escribir un programa que nos diga si un número dado es primo (no es divisible por ninguno otro número que no sea él mismo o la unidad)</p></section>
+            <section class="card-footer"><button id="13" class="btn">ejecutar</button></section>
+            <section class="card-mas">
+                <h3>Ejecutar en un input</h3>
+                <div><input class="form-input" id="txtNumber6" type="number" placeholder="Ingrese número"></div>
+                <p id="res10"></p>
+            </section>
+            
+        </article>
+    </main>
+    <script src="public/js/funtion.js"></script>
+    <script src="public/js/app.js"></script>
+</body>
+</html>
