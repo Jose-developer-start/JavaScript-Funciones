@@ -177,9 +177,9 @@ butones.forEach(boton =>{
             }while(isNaN(number));
 
             if(isNumberDivisible(number)){
-                alert('El numero es divisible entre 2');
+                alert('El número es divisible entre 2');
             }else{
-                alert('El numero no es divisible entre 2');
+                alert('El número no es divisible entre 2');
             }
             
 
@@ -230,7 +230,7 @@ butones.forEach(boton =>{
             Añadir al ejercicio anterior que nos diga por cual de los cuatro es divisible (hay que decir todos por los que es divisible)
             */
             do{
-                var number = parseInt(prompt('Ingrese un numero: '))
+                var number = parseInt(prompt('Ingrese un número: '))
             }while(isNaN(number));
             alert('Es divisible por ' + numberDivisible(number))
             
