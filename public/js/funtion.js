@@ -109,37 +109,42 @@ function numberDivisible(number){
 //Ejercicio 11: Funcion
 function Divisores(number){
     var numerosDivisores = '';
-    for(let index = 1; index <= number; index++){
-        if(number % index == 0){
-            numerosDivisores += index + ' ';
+    if(number > 0){
+        for(let index = 1; index <= number; index++){
+            if(number % index == 0){
+                numerosDivisores += index + ' ';
+            }
         }
-    }
-    return numerosDivisores;
+        return numerosDivisores;
+    }else return false;
 }
 //Ejercicio 12: Funcion
 function DivisoresComunes(number1, number2){
     var numerosDivisores = '';
-
-    for (let index = 1; index <= number1; index++){
-        if(number1 % index === 0 && number2 % index === 0){
-            numerosDivisores += index + '  ';
+    if(number1 > 0 && number2 > 0){
+        for (let index = 1; index <= number1; index++){
+            if(number1 % index === 0 && number2 % index === 0){
+                numerosDivisores += index + '   ';
+            }
         }
-    }
-    return numerosDivisores;
+        return numerosDivisores;
+    }else return false;
 }
 //Ejercicio 13: Funcion
 function numberPrimo(number){
     var contador = 0; //contador para identificar si es primo el numero
     let esNumberInicial = 2;
-    while (number > esNumberInicial && contador === 0){
-        if(number % esNumberInicial === 0){//Comprueba si es divisible por mas numero
-            contador ++;
+    if(number > 1){
+        while (number > esNumberInicial && contador === 0){
+            if(number % esNumberInicial === 0){//Comprueba si son numeros con division exacta
+                contador ++;
+            }
+            esNumberInicial ++;
         }
-        esNumberInicial ++;
-    }
-    if(contador === 0){
-        return 1;
-    }else{
-        return 0;
-    }
+        if(contador === 0){
+            return 1;
+        }else{
+            return 0;
+        }
+    }else return false;
 }

@@ -42,12 +42,14 @@ calBtn.addEventListener('click',()=>{
 var num1 = document.getElementById('num1');
 var res1 = document.getElementById('res1');
 num1.addEventListener('keyup',()=>{
-    var numero = Number(num1.value);
-    if(isNumberDivisible(numero)){
-        res1.textContent = 'El numero es divisible entre 2';
-    }else{
-        res1.textContent = 'El numero no es divisible entre 2';
-    }
+    var number = Number(num1.value);
+    if(number != ''){
+        if(isNumberDivisible(number)){
+            res1.textContent = 'El número es divisible entre 2';
+        }else{
+            res1.textContent = 'El número no es divisible entre 2';
+        }
+    }else res1.textContent = '';
 })
 //Ejercicio 5
 var frase = document.getElementById('frase');
@@ -84,21 +86,27 @@ var txtNumber1 = document.getElementById('txtNumber1');
 var res6 = document.getElementById('res6');
 txtNumber1.addEventListener('keyup',()=>{
     var number = Number(txtNumber1.value);
-    res6.textContent = 'El número '+number+' es divisible por ' + numberDivisible(number);
+    if(number != ''){
+        res6.textContent = 'El número '+number+' es divisible por ' + numberDivisible(number);
+    }else res6.textContent = "";
 })
 //Ejercicio 10
 var txtNumber2 = document.getElementById('txtNumber2');
 var res7 = document.getElementById('res7');
 txtNumber2.addEventListener('keyup',()=>{
     var number = Number(txtNumber2.value);
-    res7.textContent = 'Es divisible por ' + numberDivisible(number);
+    if(number != ""){
+        res7.textContent = 'Es divisible por ' + numberDivisible(number);
+    }else res7.textContent = "";
 })
 //Ejercicio 11
 var txtNumber3 = document.getElementById('txtNumber3');
 var res8 = document.getElementById('res8');
 txtNumber3.addEventListener('keyup',()=>{
     var number = Number(txtNumber3.value);
-    res8.textContent = "Los divisores de " + number + ' son: '+ Divisores(number);
+    if(number != ""){
+        res8.textContent = "Los divisores de " + number + ' son: '+ Divisores(number);
+    }else res8.textContent = '';
 })
 //Ejercicio 12
 var txtNumber4 = document.getElementById('txtNumber4');
@@ -115,11 +123,16 @@ var txtNumber6 = document.getElementById('txtNumber6');
 var res10 = document.getElementById('res10');
 txtNumber6.addEventListener('keyup',()=>{
     var number = Number(txtNumber6.value);
-    if(numberPrimo(number)){
-        res10.textContent = 'Es primo';
+    if(number != ""){
+        if(numberPrimo(number)){
+            res10.textContent = 'Es primo';
+        }else{
+            res10.textContent = 'No es primo';
+        }
     }else{
-        res10.textContent = 'No es primo';
+        res10.textContent = '';
     }
+    
 })
 
 const butones = document.querySelectorAll('button')
@@ -253,7 +266,7 @@ butones.forEach(boton =>{
             if(numberPrimo(number)){
                 alert('Es primo');
             }else{
-                alert('No es primo')
+                alert('No es primo');
             }
             
         }

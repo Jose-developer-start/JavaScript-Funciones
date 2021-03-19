@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Ejercicios en el lenguaje de programación javaScript de la materia de Internet II">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="public/css/style.css">
     <title>Funciones en JavaScript</title>
 </head>
 <body>
-    <header><h1>Internet II | JS</h1></header>
+    <header class="hero">
+        <div class="content-hero">
+            <h1>Internet II</h1>
+            <h2>Ejercicios en JavaScript <i class="fab fa-js"></i> de Funciones</h2>
+        </div>
+    </header>
     <main>
         <article class="card">
             <section class="card-title"><h2>Ejercicio 1</h2></section>
@@ -156,12 +162,15 @@
             <section class="card-footer"><button id="13" class="btn">ejecutar</button></section>
             <section class="card-mas">
                 <h3>Ejecutar en un input</h3>
-                <div><input class="form-input" id="txtNumber6" type="number" placeholder="Ingrese número"></div>
+                <div><input class="form-input" id="txtNumber6" type="number" min="1" placeholder="Ingrese número" required></div>
                 <p id="res10"></p>
             </section>
             
         </article>
     </main>
+    <footer>
+        <p>Desarrollador José Deodanes</p>
+    </footer>
     <script src="public/js/funtion.js"></script>
     <script src="public/js/app.js"></script>
 </body>
